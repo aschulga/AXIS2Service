@@ -1,0 +1,11 @@
+<service name="CustomService" scope="application" targetNamespace="http://doszhan.com/">
+<description>
+My Custom Service
+</description>
+<messageReceivers>
+    <messageReceiver mep="http://www.w3.org/ns/wsdl/in-only" class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver"/>
+    <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+</messageReceivers>
+<schema schemaNamespace="http://doszhan.com/xsd"/>
+<parameter name="ServiceClass">CustomService</parameter>
+</service>
